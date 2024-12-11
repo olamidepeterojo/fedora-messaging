@@ -63,7 +63,7 @@ jobs:
     trigger: release
 
   # create an srpm from upstream and submit a scratch build to koji
-  - job: production_build
+  - job: upstream_koji_build
     trigger: release
 
   # downstream automation
