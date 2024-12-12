@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2024 Red Hat, Inc
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+
 # See the documentation for more information:
 # https://packit.dev/docs/configuration/
 
@@ -63,7 +67,7 @@ jobs:
     trigger: release
 
   # create an srpm from upstream and submit a scratch build to koji
-  - job: production_build
+  - job: upstream_koji_build
     trigger: release
 
   # downstream automation
