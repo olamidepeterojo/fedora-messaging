@@ -8,6 +8,39 @@ This project uses [*towncrier*](https://towncrier.readthedocs.io/) and the chang
 
 <!-- towncrier release notes start -->
 
+## 3.7.0 (2025-01-03)
+
+### Features
+
+- Indicate which package a schema comes from when missing (#187)
+- Add a new `reconsume` CLI command to fetch a message from datagrepper and replay it for the configured consumer (#359)
+- Add an embedded HTTP server to monitor the service, see the "Monitoring" section in <project:./user-guide/consuming.rst> (#380)
+
+### Documentation Improvements
+
+- Add the `fedora-image-uploader-messages` schema package
+
+### Development Changes
+
+- Fix the Packit configuration
+- Stop using Mergify
+- Unit and integration tests improvements
+
+### Other Changes
+
+- Update dependencies
+
+### Contributors
+
+Many thanks to the contributors of bug reports, pull requests, and pull request
+reviews for this release:
+
+- Akashdeep Dhar
+- Aurélien Bompard
+- Jeremy Cline
+- Matej Focko
+
+
 ## 3.6.0 (2024-06-13)
 
 ### Features
