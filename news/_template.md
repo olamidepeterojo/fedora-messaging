@@ -14,8 +14,7 @@ SPDX-License-Identifier: GPL-2.0-or-later
    {%- endif -%}
 {%- endmacro -%}
 
-{{- top_line -}}
-
+{{- top_line }}
 {% for section, _ in sections.items() -%}
 {%- if section -%}
 ## {{section}}
@@ -58,8 +57,7 @@ No significant changes.
 {% if sections[section]["author"] -%}
 ### {{definitions['author']["name"]}}
 
-Many thanks to the contributors of bug reports, pull requests, and pull request
-reviews for this release:
+Many thanks to the contributors of bug reports, pull requests, and pull request reviews for this release:
 
 {% for text, values in sections[section]["author"].items() -%}
 - {{ text }}
